@@ -2,22 +2,20 @@
 
 **app.py:**
 
-1. Import necessary modules: The code starts by importing required modules from Flask, SQLAlchemy, Flask-Login, etc.
-
-2. Configuration and Setup:
+1. Configuration and Setup:
    - Configuring the app with a secret key, SQLAlchemy database URI, and disabling track modifications.
    - Initializing the CKEditor and Bootstrap extensions for the app.
    - Creating the Flask app instance, SQLAlchemy database instance, and Migrate object for database migrations.
    - Setting up the LoginManager for user authentication.
 
-3. Database Models:
+2. Database Models:
    - Defining the `BlogPost` model with columns for blog post details and an `author_id` column as a foreign key to the `Users` table.
    - Defining the `Users` model with columns for user details and a relationship with `BlogPost` using `db.relationship`.
 
-4. User Loader Function:
+3. User Loader Function:
    - The `login_manager.user_loader` function is defined to load a user by its `id`.
 
-5. Routes and Views:
+4. Routes and Views:
    - `/`: The home route, retrieves all blog posts and renders the `index.html` template.
    - `/register`: Renders the registration form and handles user registration logic.
    - `/login`: Renders the login form and handles user login logic.
@@ -29,7 +27,7 @@
    - `/edit-post/<int:post_id>`: Renders the form to edit a blog post and handles post update logic.
    - `/delete/<int:post_id>`: Deletes a specific blog post.
 
-6. Running the App: The app runs if executed directly.
+5. Running the App: The app runs if executed directly.
 
 **forms.py:**
 
