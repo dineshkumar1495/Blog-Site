@@ -31,6 +31,8 @@
 5. Running the App: The app runs if executed directly.
 
 **forms.py:**
+![Screenshot (342)](https://github.com/dineshkumar1495/Blog-Site/assets/94850695/99a38658-d10f-445e-a78e-1a27dc639788)
+
 
 1. Importing FlaskForm and necessary fields and validators from Flask-WTF.
 
@@ -87,6 +89,9 @@
 2. Displays a page containing information about the website author.
 
 **templates/contact.html:**
+
+![Screenshot (343)](https://github.com/dineshkumar1495/Blog-Site/assets/94850695/6515723d-e5c1-4d29-a289-9bcc58efd069)
+
 
 1. Extends `bootstrap/base.html` and includes `header.html`.
 
